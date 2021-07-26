@@ -1,0 +1,108 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+    /* размер шрифта */
+    font-size: 14px;
+    /* Цвет текста #0A143A */
+    color: #0A143A;
+}
+
+.header {
+    /* max ширина элемента */
+    max-width: 1446px;
+    /* автоматическое выравнивание по середине */
+    margin: auto;
+    padding-top: 30px;
+}
+
+.navbar {
+    /* гибкое поведение для элементов */
+    display: flex;
+    /* выравнивание по вертикали по центру */
+    align-items: center;
+    /* Разбросать элементы по кроям */
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.navbar-menu {
+    /* Автоматический отступ справа*/
+    margin-right: auto;
+}
+
+.menu {
+    /* отключаем точки в списке */
+    list-style: none;
+    /* обнуляем отступы */
+    margin: 0;
+    /* внутрений отступ слева */
+    padding-left: 22px;
+    padding-right: 22px;
+    display: flex;
+}
+
+
+/* для всех пунктов меню кроме последнего */
+
+.menu-item:not(:last-child) {
+    /* отступ справа 14 пикселей */
+    padding-right: 14px;
+}
+
+.menu-link {
+    /* Отключаем подчеркивание ссылок */
+    text-decoration: none;
+    /* Возьми цвет как у твоего родителя body */
+    color: inherit;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    /* сверху и снизу 10 пикселей, а по краям 15 */
+    padding: 10px 15px;
+}
+
+.button-link {
+    color: inherit;
+}
+
+.button-primary {
+    /* Фон */
+    background: #256EEB;
+    /* Скругление Углов */
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.search-panel {
+    height: 50px;
+    background: #256EEB;
+    border-radius: 5px;
+    display: flex;
+    padding: 3px;
+}
+
+.search-input {
+    /* растягивается на все свободное место */
+    flex-grow: 1;
+    background: #FFFFFF;
+    border-radius: 5px;
+    /* отключение обводку */
+    border: none;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.search-button {
+    background: #256EEB;
+    border: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.search-button-text {
+    margin-left: 5px;
+}
